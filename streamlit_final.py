@@ -46,7 +46,7 @@ def main():
     st.sidebar.markdown("> Made by [*Beta*]( )")
     
     user_color = '#000000'
-    title_webapp = "IngredientIQ"
+    title_webapp = "NutrioBot"
     image_link = "https://th.bing.com/th/id/OIP.w9gXyd2xzaca3OyruTqhrgHaEJ?rs=1&pid=ImgDetMain"
     
     html_temp = f"""
