@@ -97,3 +97,6 @@ https://github.com/user-attachments/assets/0eb7bb97-3edb-477d-8748-66eaf9ce12d1
 
 ## ChatBot Output
 ![chatbot](https://github.com/user-attachments/assets/2a930544-8824-494c-ae8c-1ab358603fdd)
+
+## Conclusion
+NutrioBot simplifies food label analysis by using AI to extract and explain the benefits and drawbacks of ingredients. With OCR for ingredient detection and BERT for predictions, it empowers users to make informed dietary choices. The intuitive interface ensures easy interaction, making NutrioBot a valuable tool for healthier, conscious eating.
