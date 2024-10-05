@@ -15,8 +15,7 @@
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Installation
 
@@ -51,3 +50,32 @@
 To start the NutrioBot application, run:
 ```bash
 streamlit run streamlit_final.py
+```
+
+## Usage
+Chatbot Interaction
+Open the app in your browser and enter any questions related to food ingredients in the chatbot section.
+NutrioBot will provide concise responses based on the input.
+OCR and Ingredient Analysis
+Upload an image of a food product label to extract ingredient names.
+The app will generate a detailed analysis of the ingredients, including potential allergens, side effects, and health impacts.
+
+## Project Structure
+NutrioBot/
+│
+├── bert.py              # BERT model for ingredient analysis
+├── nltk_script.py       # NLTK resource setup
+├── main.py              # OCR functionality using PaddleOCR
+├── streamlit_final.py   # Main Streamlit app with chatbot and OCR
+├── requirements.txt     # Required Python libraries
+├── README.md            # Project documentation
+└── ...
+
+## Technologies Used
+Technologies Used
+Streamlit: For building the user interface.
+Google Gemini AI API: For generating chatbot responses.
+PaddleOCR: For Optical Character Recognition (OCR) of ingredient labels.
+BERT: For predicting attributes and providing information on food ingredients.
+NLTK: For text processing and tokenization.
+
