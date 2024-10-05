@@ -30,7 +30,7 @@
 ### Setting up the environment
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/nutriobot.git
+    git clone https://github.com/yourusername/nutriobot.git](https://github.com/Sudharsan72692/INTEL-AI
     cd nutriobot
     ```
 
