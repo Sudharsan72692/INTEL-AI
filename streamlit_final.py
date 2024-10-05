@@ -18,7 +18,7 @@ nltk.download('stopwords')
 nltk.download('wordnet')
 
 # Set up Google Generative AI API credentials
-genai.configure(api_key='AIzaSyBDhZGbht7aVKZ-mW-E1Ov_k4EoWw03JQw')
+genai.configure(api_key='Your_API_Key')
 
 # Function to get response from Google Gemini AI
 def get_gemini_response(user_input, history=[]):
