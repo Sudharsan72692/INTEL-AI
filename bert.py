@@ -1,26 +1,36 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 import pandas as pd
 import torch
 from torch.utils.data import DataLoader, Dataset
 from transformers import BertTokenizer, BertForSequenceClassification, AdamW
 from sklearn.model_selection import train_test_split
 from tqdm import tqdm
+import intel_extension_for_pytorch as ipex
+from sklearnex import patch_sklearn
+import random
+
+# Apply Intel optimizations
+patch_sklearn()  # Accelerates scikit-learn operations
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
+# Load the dataset
 dataset = pd.read_csv("C:/Users/sudha/Downloads/Intel/Thavasi/FinalDataset.csv")
 dataset = dataset.dropna()
+
+# Function to summarize data
 def data_summary(input_ingredients):
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-    
     MAX_LENGTH = 128
     BATCH_SIZE = 16
     LEARNING_RATE = 2e-5
     EPOCHS = 3
     
+    # Load the BERT model and optimize it using IPEX
     model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=len(dataset.columns)-1)
+    model = ipex.optimize(model)  # Apply Intel optimizations here
     
     optimizer = AdamW(model.parameters(), lr=LEARNING_RATE)
     
-    import random
     def predict_attributes(ingredients):
         predicted_attributes_list = []
         for ingredient in ingredients:
@@ -60,11 +70,5 @@ def data_summary(input_ingredients):
             'Predicted Side Effects': predicted_attributes[i]['Side Effects']
         }
         predicted_attributes_list.append(predicted_dict)
-    
-    '''# Printing the list of dictionaries
-    for predicted_dict in predicted_attributes_list:
-        print(predicted_dict)
-        print()
-    '''
+
     return predicted_attributes_list
-    
