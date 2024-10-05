@@ -81,5 +81,8 @@ BERT: For predicting attributes and providing information on food ingredients.
 NLTK: For text processing and tokenization.
 
 
+## Website UI:
+![nutriobot home](https://github.com/user-attachments/assets/9db669ec-0084-4e3d-a1dd-0f79a1458fc9)
 
 
+## Demo Video
