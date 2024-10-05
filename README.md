@@ -79,4 +79,7 @@ Google Gemini AI API: For generating chatbot responses.
 PaddleOCR: For Optical Character Recognition (OCR) of ingredient labels.
 BERT: For predicting attributes and providing information on food ingredients.
 NLTK: For text processing and tokenization.
+#Website UI
+
+![UI](https://github.com/user-attachments/assets/111c79be-55b2-4a93-bcdc-f5042a066cae)
 
