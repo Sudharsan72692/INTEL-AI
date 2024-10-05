@@ -71,6 +71,7 @@ NutrioBot/
 ├── README.md            # Project documentation
 └── ...
 
+
 ## Technologies Used
 Technologies Used
 Streamlit: For building the user interface.
