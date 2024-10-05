@@ -1,4 +1,6 @@
-# NutrioBot
+# NutrioBot - Assisting people with packed food items.
+![Nutrio Bot](https://github.com/user-attachments/assets/a1e58598-4fec-4cea-9175-a7d7beb50094)
+
 
 **NutrioBot** is an AI-powered web application designed to help users understand the ingredients in their food products. The app provides comprehensive information such as the benefits, side effects, allergens, dietary needs, and much more, empowering users to make informed decisions about their food consumption. NutrioBot utilizes advanced technologies like OCR for ingredient extraction, BERT-based NLP for attribute prediction, and integrates the Google Gemini AI API for chatbot functionality.
 
@@ -85,4 +87,10 @@ NLTK: For text processing and tokenization.
 ![nutriobot home](https://github.com/user-attachments/assets/9db669ec-0084-4e3d-a1dd-0f79a1458fc9)
 
 
-## Demo Video
+## Demo Video and Test Images
+https://github.com/user-attachments/assets/0eb7bb97-3edb-477d-8748-66eaf9ce12d1
+
+![chocolate-back](https://github.com/user-attachments/assets/4d04187f-0eb4-40cf-bb64-3217d53d49b0)
+
+## ChatBot Output
+![chatbot](https://github.com/user-attachments/assets/2a930544-8824-494c-ae8c-1ab358603fdd)
